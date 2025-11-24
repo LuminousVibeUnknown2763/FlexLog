@@ -86,7 +86,7 @@ document.documentElement.style.setProperty("--pct", pieval);
 const logcont = document.getElementById("logcont");
 
 window.addEventListener('load', () => {
-  const logs = JSON.parse(localStorage.getItem('workoutLog') || '[]');
+  const logs = JSON.parse(localStorage.getItem('fworkoutLog') || '[]');
   logcont.innerHTML = '';
   logs.forEach(item => {
     const p = document.createElement('p');
@@ -107,7 +107,7 @@ const workout = document.getElementById("inwrkout").value;
 const sets = document.getElementById("insts").value;
 const reps = document.getElementById("inrps").value;
 
-const logs = JSON.parse(localStorage.getItem('workoutLog') || '[]');
+const logs = JSON.parse(localStorage.getItem('fworkoutLog') || '[]');
 
   logs.push({
     date: today,
@@ -116,7 +116,7 @@ const logs = JSON.parse(localStorage.getItem('workoutLog') || '[]');
     rep: reps
   });
 
-  localStorage.setItem('workoutLog', JSON.stringify(logs));
+  localStorage.setItem('fworkoutLog', JSON.stringify(logs));
 
 const p = document.createElement('p');
     p.textContent = `${today} – ${workout} - ${sets} x ${reps}`;
