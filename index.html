@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>FlexLog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class='nav'>
+    <div>
+      <a href='#home'id='homeAnchor'></a>
+      <a href='#log' id='loga'></a>
+      <a href='#workouts' id='seta'></a>
+    </div>
+    <button id='toggleThemeBtn'class='toggleThemeBtn'onclick='toggleTheme()'></button>
+  </nav>
+
+  <header id="home">
+    <img class="dshbrdpic"src="img/Buffguy.png">
+    <div class="dshbrdshadow"></div>
+    <div class="invcont">
+    <div class="donut">
+  <div class="donut__fill"></div>
+  <img class="imag"src="img/bicep.png">
+  <div class="donut__label"></div>
+    </div>
+    <div class="invcont">
+    <h1>FlexLog</h1>
+    <p><em>"No pain, No gain"</em></p>
+    </div>
+    </div>
+  </header>
+
+  <section id="log">
+    <form onsubmit='addlog(); return false;'>
+      <input id="inwrkout"type="text"placeholder="Name Of Workout..."required>
+      <input id="insts"type="number"placeholder="Sets..."required>
+      <input id="inrps"type="number"placeholder="Reps..."required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="logcont">
+    </div>
+  </section>
+
+  <section id="workouts">
+    <h1 class="workouttitle">biceps</h1>
+    <div class="invrow">
+    <div class="card">
+       <img src="img/cocurl.png">
+       <button>visit</button>
+       <h1>concentration curls</h1>
+    </div>
+    <div class="card">
+       <img src="img/pcurl.png">
+       <button>visit</button>
+       <h1>preacher curls</h1>
+    </div>
+    <div class="card">
+       <img src="img/cacurl.png">
+       <button>visit</button>
+       <h1>cable curls</h1>
+    </div>
+    <div class="card">
+       <img src="img/ecurl.png">
+       <button>visit</button>
+       <h1>Ez-bar/Barbell curls</h1>
+    </div>
+    <div class="card">
+       <img src="img/pullup.png">
+       <button>visit</button>
+       <h1>chin-ups</h1>
+    </div>
+    </div>
+    <h1 class=workouttitle>Triceps</h1>
+    <div class="invrow">
+    <div class="card">
+       <img src="img/pushup.png">
+       <button>visit</button>
+       <h1>push-ups</h1>
+    </div>
+    <div class="card">
+       <img src="img/dpushups.png">
+       <button>visit</button>
+       <h1>diamond push-ups</h1>
+    </div>
+    <div class="card">
+       <img src="img/mdip.png">
+       <button>visit</button>
+       <h1>tricep dips <em>(machine)</em></h1>
+    </div>
+    <div class="card">
+       <img src="img/bdip.png">
+       <button>visit</button>
+       <h1>tricep dips <em>(bench)</em></h1>
+    </div>
+    <div class="card">
+       <img src="img/tricepe.png">
+       <button>visit</button>
+       <h1>tricep extensions</h1>
+    </div>
+    </div>
+    <h1 class="workouttitle">Chest</h1>
+    <div class="invrow">
+    <div class="card">
+       <img src="img/pushup.png">
+       <button>visit</button>
+       <h1>push-ups</h1>
+    </div>
+    <div class="card">
+       <img src="img/cdip.png">
+       <button>visit</button>
+       <h1>Chest dips</h1>
+    </div>
+    <div class="card">
+       <img src="img/benchpress.png">
+       <button>visit</button>
+       <h1>Bench press</h1>
+    </div>
+    </div>
+    <h1 class="workouttitle">Core/Abs</h1>
+    <div class="invrow">
+    <div class="card">
+       <img src="img/plank.png">
+       <button>visit</button>
+       <h1>Planks</h1>
+    </div>
+    <div class="card">
+       <img src="img/crunches.png">
+       <button>visit</button>
+       <h1>Crunches</h1>
+    </div>
+    <div class="card">
+       <img src="img/hanginglegraises.png">
+       <button>visit</button>
+       <h1>Hanging leg raises</h1>
+    </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
