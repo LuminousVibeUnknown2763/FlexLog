@@ -44,7 +44,7 @@
 --sub-grad-first: #400040;
 --sub-grad-second: #2a45b5;
 
---background: #252525;
+--background: #0a0a0a;
 
 --text: #efefef;
 --low-text: hsl(0, 0%, 75%);
@@ -108,7 +108,7 @@ transition: all 0.3s ease;
 }
 
 #home p {
-font-size: 10px;
+font-size: 20px;
 }
 
 body form {
